@@ -12,7 +12,7 @@ Companion Material for Class Delivery by [Alexander Kastil](https://www.integrat
 
 ## Contributing
 
-Feel free to contribute. When contribute implement your changes / additions on a feature branch in your fork and issue a pull request after completion. An introduction video into forks and pull requests can be found [here](https://www.youtube.com/watch?v=nT8KGYVurIU)
+Feel free to contribute. When contribute implement your changes / additions on a feature branch in your fork and issue a pull request after completion. An introduction video into forks and pull requests can be found [in this YouTube video](https://www.youtube.com/watch?v=nT8KGYVurIU)
 
 ## License & Re-Use
 
