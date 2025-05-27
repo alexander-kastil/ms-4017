@@ -11,3 +11,5 @@
 [Copilot Studio licensing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing?source=recommendations)
 
 [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/en-us/copilot/)
+
+[Microsoft Scenario Library](https://adoption.microsoft.com/en-us/scenario-library/)
