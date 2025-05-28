@@ -1,6 +1,6 @@
 # Manage and extend Microsoft 365 Copilot
 
-Companion Material for Class Delivery by [Alexander Kastil](https://www.integrations.at/kontakt-impressum.aspx) containing:
+Companion Material for Class Delivery by [Alexander Kastil](https://www.linkedin.com/in/alexander-kastil-3bb26511a/) containing:
 
 - [Instructor Demos](./demos)
 
