@@ -2,6 +2,8 @@
 
 ## Copilot Pay as you go billing
 
+[Copilot Studio licensing](https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing?source=recommendations)
+
 [Copilot Pay as you go billing](https://learn.microsoft.com/en-us/copilot/microsoft-365/pay-as-you-go/overview)
 
 [View costs and billing for Microsoft 365 Copilot pay-as-you-go](https://learn.microsoft.com/en-us/copilot/microsoft-365/pay-as-you-go/view-cost)
