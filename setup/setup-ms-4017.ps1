@@ -1,0 +1,1 @@
+Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser
