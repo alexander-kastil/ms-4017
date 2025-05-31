@@ -4,8 +4,6 @@
 
 Available at: [https://admin.microsoft.com/#/copilot/settings](https://admin.microsoft.com/#/copilot/settings)
 
-Simulation: [Copilot Settings](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.highlights.guide%2Fstart%2F972f02d3-0e9e-4fe7-8943-b63def2b7ef1%3Ftoken%3Dbc8c76f4-3ce6-495a-bf30-a3dea84b3013&data=05%7C02%7CTony.Frink%40microsoft.com%7Ca7a16b2d71d9489758e008dd89e4c452%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638818337850512207%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Kbt27ZUb3asDGsxxK095E6Hn%2FE0qyK0JXBNjc4w1B7g%3D&reserved=0)
-
 ## Copilot in Bing
 
 [Download](https://download.microsoft.com/download/8/9/d/89d41212-7ece-414c-b6d3-f4ecb070c613/ConfigureM365Copilot.ps1) the script to enable / disable Copilot in Bing:
@@ -13,3 +11,5 @@ Simulation: [Copilot Settings](https://nam06.safelinks.protection.outlook.com/?u
 ```powershell
 '.\ConfigureM365Copilot.ps1 -enable $true'
 ```
+
+## Manage web access for Microsoft 365 Copilot
