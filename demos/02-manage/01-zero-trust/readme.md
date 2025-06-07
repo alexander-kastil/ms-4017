@@ -4,4 +4,9 @@
 
 [Microsoft Purview data security and compliance protections for generative AI apps](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview)
 
-[Considerations for DSPM for AI & data security and compliance protections for Copilot](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview-considerations)
+[Considerations for Data Security Posture Management (DSPM) for AI & data security and compliance protections for Copilot](https://learn.microsoft.com/en-us/purview/ai-microsoft-purview-considerations)
+
+Available collection policies for Microsoft 365 Copilot:
+
+- DSPM for AI - Capture interactions for Copilot experiences
+- DSPM for AI - Detect sensitive info shared with AI via network
