@@ -40,4 +40,6 @@ Available at: [https://admin.microsoft.com/#/copilot/settings](https://admin.mic
 
 [Microsoft Purview Communication Compliance](https://learn.microsoft.com/en-us/purview/communication-compliance)
 
+[Microsoft Purview Communication Compliance - Interactive tour](https://mslearn.cloudguides.com/guides/Get%20started%20with%20Microsoft%20Purview%20Communication%20Compliance)
+
 [Copilot Communication Compliance](https://purview.microsoft.com/cc/overview)
