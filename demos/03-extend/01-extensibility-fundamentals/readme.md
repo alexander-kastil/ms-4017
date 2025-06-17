@@ -5,3 +5,5 @@
 [Microsoft 365 Copilot connectors](https://learn.microsoft.com/en-us/microsoftsearch/connectors-overview)
 
 [Agents for Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agents-overview)
+
+[Copilot API capabilities](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-apis-overview)

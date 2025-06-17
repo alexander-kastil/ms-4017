@@ -8,5 +8,5 @@
 
 Available collection policies for Microsoft 365 Copilot:
 
-- DSPM for AI - Capture interactions for Copilot experiences
-- DSPM for AI - Detect sensitive info shared with AI via network
+- Data Security Posture Management for AI - Capture interactions for Copilot experiences
+- Data Security Posture Management for AI - Detect sensitive info shared with AI via network
