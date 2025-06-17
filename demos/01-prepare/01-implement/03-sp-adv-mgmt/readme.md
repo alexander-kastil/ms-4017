@@ -67,3 +67,27 @@ Restricts site access to specific group members only
 Helps minimize oversharing risks, especially important for Copilot deployments
 Works with Microsoft 365 groups, Teams-connected, and non-group connected sites
 Must be configured at organization level before applying to individual sites
+
+## Stewardship Rules
+
+1. Role Responsibilities
+   Define what a data steward is accountable for (e.g., data quality, metadata management, compliance).
+   Clarify the scope of their authority and decision-making power.
+2. Data Quality Standards
+   Set expectations for data accuracy, completeness, consistency, and timeliness.
+   Outline procedures for identifying and correcting data issues.
+3. Documentation and Metadata Management
+   Require stewards to maintain up-to-date metadata and data dictionaries.
+   Ensure lineage and provenance of data are tracked.
+4. Compliance and Security
+   Ensure data handling aligns with internal policies and external regulations (e.g., GDPR, HIPAA).
+   Define how stewards should handle sensitive or restricted data.
+5. Change Management
+   Establish protocols for managing changes to data definitions, structures, or usage.
+   Require impact assessments and stakeholder communication.
+6. Monitoring and Reporting
+   Set expectations for regular audits, quality checks, and reporting on data health.
+   Define KPIs or metrics for stewardship performance.
+7. Collaboration and Escalation
+   Outline how stewards should work with data owners, IT, and compliance teams.
+   Provide escalation paths for unresolved data issues.
