@@ -1,93 +1,66 @@
 # SharePoint Advanced Management
 
-[SharePoint Advanced Management](https://learn.microsoft.com/en-us/sharepoint/advanced-management?WT.mc_id=365AdminCSH_spo)
+[SharePoint Advanced Management](https://learn.microsoft.com/en-us/sharepoint/advanced-management)
 
-## Key Features of SAM
+[SharePoint Advanced Management prerequisites](https://learn.microsoft.com/en-us/sharepoint/sharepoint-advanced-management-prerequisites)
 
-### Block Download Policy for SharePoint and OneDrive
+[Get ready for Microsoft 365 Copilot and agents with SharePoint Advanced Management](https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management)
 
-Blocks downloading, printing, or syncing of files from targeted sites
-Configured via PowerShell for individual sites or organization-wide
-Users can still work on files using Office online applications
-Can target specific sensitivity labels or mark entire sites as read-only
+Hands-On Demo: [Turn a Data Access Governance report into a site access review](demo-oversharing-report.md)
 
-### Change History Report
+SharePoint Advanced Management (SAM) is the governance layer that makes a Copilot rollout defensible. Microsoft organizes it into three jobs: manage content sprawl, manage the content lifecycle, and prevent oversharing. Administrators work with it mainly in the SharePoint admin center, with PowerShell for bulk and reporting operations.
 
-Creates detailed CSV reports of site actions and organization setting changes
-Covers the last 180 days of changes by Global, SharePoint, and Site Administrators
-Helps monitor configuration changes and maintain desired organizational state
+The oversharing group is the one that decides whether Copilot is safe to broaden. The others decide whether the tenant stays governable a year later.
 
-### Conditional Access Policies for SharePoint and OneDrive
+## Manage content sprawl
 
-Works with Microsoft Entra Authentication Context
-Enforces stricter access controls for specific SharePoint sites
-Can require additional authentication, corporate-managed devices, or Terms of Use acceptance
-Has limitations with certain apps (Viva Engage, Teams web app, OneDrive sync, etc.)
+- **Site ownership policy** defines who is accountable for each site, sets a minimum owner or admin count, and notifies when sites fall below it.
+- **Inactive site policy** detects inactive sites and emails their owners.
+- **Site attestations** ask owners to periodically confirm the site is still needed and that its owners, members, permissions and sharing settings are correct.
 
-### Data Access Governance Reports
+## Manage the content lifecycle
 
-Helps identify potential oversharing of SharePoint sites
-Provides three types of reports:
+- **Catalog management** groups sites into logical categories by region, department, user, information barrier or custom property.
+- **Change history reports** track changes to individual sites or to organization settings over the last 180 days.
+- **Recent actions panel** shows changes an administrator made to a site's properties in the last 30 days, such as a rename, a deletion or a quota change.
+- **Restrict site creation by apps** names the non-Microsoft applications allowed to create sites.
 
-Sharing Links Report (external sharing analysis)
-Sensitivity Labels Applied to Files Report
-Shared with 'Everyone except external users' Report
+## Prevent oversharing
 
-Limited to 100 sites in admin center view, up to 10,000 in CSV downloads
+- **Restricted Content Discovery (RCD)** keeps high-risk sites and files out of Microsoft 365 Copilot and agentic experiences. This is the successor to Restricted SharePoint Search, covered in [04-restricted-search](../04-restricted-search/readme.md).
+- **Restricted access control (RAC)** limits a SharePoint or OneDrive site to members of specific groups, so previously shared links stop resolving for everyone else.
+- **Conditional Access policies** connect a Microsoft Entra Conditional Access policy to a site through an authentication context.
+- **Block download policy** blocks moving or downloading files from SharePoint and OneDrive sites and from Teams meeting recordings, while leaving the Office web apps usable.
+- **Content management assessment** is the hub that scores current practice and recommends actions.
+- **Data Access Governance (DAG) reports** at **Reports** > **Data access governance** surface sites that may hold overshared or sensitive content. The portal splits them into two groups. Snapshot reports:
+  - **Site permissions across your organization**, tagged RECOMMENDED
+  - **Site permissions for users**, tagged NEW
+  - **Sensitivity labels applied to files**
 
-### Default Sensitivity Labels for Document Libraries
+  Activity reports, both covering the last 28 days:
+  - **Sharing links**
+  - **Shared with 'Everyone except external users'**
+- **Site access reviews** delegate the review of a DAG report to the owners of the overshared sites.
+- **Site policy comparison** takes one or more sites as a baseline and compares up to 10,000 target sites using AI.
+- **AI insights** sits next to the reports in the admin center and turns a report into a list of suggested actions.
+- **App insights** shows which non-Microsoft applications registered in Microsoft Entra are reaching SharePoint content.
+- **Insights on agents in SharePoint** lists recently created agents and the sites with the most of them.
+- **Agent access insights** show how agents are interacting with SharePoint and OneDrive content.
+- **OneDrive access restriction** limits OneDrive access by security group, tenant-wide or for one user's OneDrive.
+- **Restricted site creation** designates who may create SharePoint or OneDrive sites, using security groups and PowerShell.
 
-Automatically applies labels to new files uploaded to specific libraries
-Provides location-based labeling without content inspection
-Only affects new documents, not existing ones
-Now requires Microsoft 365 E5/A5/G5 licenses
+The two agent reports are new relative to earlier versions of this course and are worth demonstrating. Once a customer allows agent creation in SharePoint, agent sprawl becomes its own governance problem, and these are the only reports that make it visible.
 
-### OneDrive Access Restriction Policy
+The **SharePoint Admin Agent** is the productivity layer over all of this, and is a reasonable place to start a demo because it explains its own findings in natural language.
 
-Restricts OneDrive access to members of specific security groups
-Prevents unauthorized access even if files were previously shared
-Configured through SharePoint Admin Center or PowerShell
+## Stewardship rules
 
-### Recent SharePoint Admin Actions
+Governance tooling only works if someone owns the outcome. Use these as the discussion frame when a customer asks who should be running the reports above.
 
-Shows the last 30 changes made by the logged-in admin
-Extended history (beyond current session) requires SAM license
-Only displays changes by the current admin, not organization-wide changes
-
-### Site Lifecycle Management
-
-Automated, rule-based policies to manage inactive sites
-Identifies sites based on inactivity criteria
-Sends automated notifications to site owners for certification
-Includes AI Insights for cleanup recommendations
-
-### Site-Level Access Restriction
-
-Restricts site access to specific group members only
-Helps minimize oversharing risks, especially important for Copilot deployments
-Works with Microsoft 365 groups, Teams-connected, and non-group connected sites
-Must be configured at organization level before applying to individual sites
-
-## Stewardship Rules
-
-1. Role Responsibilities
-   Define what a data steward is accountable for (e.g., data quality, metadata management, compliance).
-   Clarify the scope of their authority and decision-making power.
-2. Data Quality Standards
-   Set expectations for data accuracy, completeness, consistency, and timeliness.
-   Outline procedures for identifying and correcting data issues.
-3. Documentation and Metadata Management
-   Require stewards to maintain up-to-date metadata and data dictionaries.
-   Ensure lineage and provenance of data are tracked.
-4. Compliance and Security
-   Ensure data handling aligns with internal policies and external regulations (e.g., GDPR, HIPAA).
-   Define how stewards should handle sensitive or restricted data.
-5. Change Management
-   Establish protocols for managing changes to data definitions, structures, or usage.
-   Require impact assessments and stakeholder communication.
-6. Monitoring and Reporting
-   Set expectations for regular audits, quality checks, and reporting on data health.
-   Define KPIs or metrics for stewardship performance.
-7. Collaboration and Escalation
-   Outline how stewards should work with data owners, IT, and compliance teams.
-   Provide escalation paths for unresolved data issues.
+1. **Role responsibilities.** Define what a data steward is accountable for, such as data quality, metadata management and compliance, and clarify the scope of their authority.
+2. **Data quality standards.** Set expectations for accuracy, completeness, consistency and timeliness, and outline how issues get identified and corrected.
+3. **Documentation and metadata management.** Require up-to-date metadata and data dictionaries, and track lineage and provenance.
+4. **Compliance and security.** Align data handling with internal policy and external regulation such as GDPR and HIPAA, and define handling for sensitive or restricted data.
+5. **Change management.** Establish protocols for changes to data definitions, structures or usage, with impact assessments and stakeholder communication.
+6. **Monitoring and reporting.** Set expectations for regular audits and quality checks, and define KPIs for stewardship performance.
+7. **Collaboration and escalation.** Define how stewards work with data owners, IT and compliance, and provide an escalation path.
