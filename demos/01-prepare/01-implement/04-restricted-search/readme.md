@@ -8,6 +8,8 @@
 
 [Secure and govern Microsoft 365 Copilot: foundational deployment guidance](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)
 
+Hands-On Demo: [Take one site out of Copilot discovery and report on it tenant-wide](demo-restrict-content-discovery.md)
+
 Both features answer the same customer question: "we are not confident our SharePoint permissions are clean, and we want Copilot rolled out anyway." Both are explicitly temporary. Neither is a security boundary, and neither changes a single permission.
 
 ## Restricted SharePoint Search (the outgoing approach)
@@ -31,7 +33,9 @@ RCD requires SharePoint Advanced Management and a Microsoft 365 Copilot license.
 Enable it per site in the SharePoint admin center:
 
 - **Sites** > **Active sites** > select the site > **Settings** tab
-- Turn on **Restrict content from Microsoft 365 Copilot**, then **Save**
+- Set **Restrict content discovery** (carrying a **PRO** badge) to **On**, then **Save**
+
+The portal names this control **Restrict content discovery**. Microsoft Learn and older course material call it "Restrict content from Microsoft 365 Copilot", which is not the label on screen.
 
 Or with PowerShell:
 

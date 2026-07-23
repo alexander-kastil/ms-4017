@@ -1,5 +1,7 @@
 # Copilot & Copilot Studio Billing
 
+Hands-On Demo: [Cap Copilot credit spend with a targeted spending policy](demo-spending-policy.md)
+
 ## Copilot Pay as you go billing
 
 [Microsoft 365 Copilot pay-as-you-go overview](https://learn.microsoft.com/en-us/copilot/microsoft-365/pay-as-you-go/overview)
@@ -35,8 +37,10 @@ Global administrator, Billing administrator, AI administrator, and Global reader
 
 ### Monitoring
 
-- **Microsoft 365 admin center** > **Cost Management**, per pay-as-you-go service
+- **Microsoft 365 admin center** > **Copilot** > **Cost management**, with Overview, Configuration and Consumption tabs. A banner on that page states it applies to **Copilot Cowork** and **Work IQ API** only for now, and points at **classic Billing & usage** for the other pay-as-you-go services.
 - Azure portal, for cost breakdown and analysis through Microsoft Cost Management
+
+Spending policies on the Configuration tab carry a precedence rule that reads backwards to most people: when several policies apply to one user, the most targeted policy wins, so a higher targeted budget overrides a lower all-users budget.
 
 ## Copilot Studio Pay as you go billing
 

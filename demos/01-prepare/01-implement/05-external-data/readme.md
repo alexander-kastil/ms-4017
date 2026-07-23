@@ -6,6 +6,8 @@
 
 [Federated connectors overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview)
 
+Hands-On Demo: [Ground Copilot in outside content with a gallery connector](demo-gallery-connector.md)
+
 Copilot only reasons over what it can reach. Connectors are how line-of-business content that lives outside Microsoft 365 becomes grounding data, so it can be searched, summarized and cited alongside SharePoint and Exchange content.
 
 ## Two connector models

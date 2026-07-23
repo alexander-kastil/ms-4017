@@ -7,7 +7,7 @@
 - Prepare for Microsoft 365 Copilot extensibility
   - Implement Microsoft 365 Copilot
   - Examine data security and compliance in Microsoft 365 Copilot
-- Manage Microsoft 365 Copilot administration
+- [Manage Microsoft 365 Copilot administration](02-manage/readme.md)
   - Apply principles of Zero Trust to Microsoft Copilots
   - Manage Microsoft Copilot
   - Manage Microsoft 365 Copilot

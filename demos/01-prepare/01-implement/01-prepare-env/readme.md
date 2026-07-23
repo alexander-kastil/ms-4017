@@ -1,5 +1,7 @@
 # Prepare Env
 
+Hands-On Demo: [Set the update channel and swap security defaults for Conditional Access](demo-tenant-readiness-baseline.md)
+
 ## Get informed about the Microsoft 365 Copilot
 
 [Microsoft 365 Copilot](https://adoption.microsoft.com/en-us/Copilot/)

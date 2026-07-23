@@ -6,6 +6,8 @@
 
 [Get ready for Microsoft 365 Copilot and agents with SharePoint Advanced Management](https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management)
 
+Hands-On Demo: [Turn a Data Access Governance report into a site access review](demo-oversharing-report.md)
+
 SharePoint Advanced Management (SAM) is the governance layer that makes a Copilot rollout defensible. Microsoft organizes it into three jobs: manage content sprawl, manage the content lifecycle, and prevent oversharing. Administrators work with it mainly in the SharePoint admin center, with PowerShell for bulk and reporting operations.
 
 The oversharing group is the one that decides whether Copilot is safe to broaden. The others decide whether the tenant stays governable a year later.
@@ -30,12 +32,14 @@ The oversharing group is the one that decides whether Copilot is safe to broaden
 - **Conditional Access policies** connect a Microsoft Entra Conditional Access policy to a site through an authentication context.
 - **Block download policy** blocks moving or downloading files from SharePoint and OneDrive sites and from Teams meeting recordings, while leaving the Office web apps usable.
 - **Content management assessment** is the hub that scores current practice and recommends actions.
-- **Data Access Governance (DAG) reports** surface sites that may hold overshared or sensitive content:
-  - Permission state reports for sites, OneDrive sites and files
-  - Site permissions for a given user
-  - Sensitivity label snapshot
-  - Sharing links activity, over the last 28 days
-  - Everyone except external users (EEEU) insights, over the last 28 days
+- **Data Access Governance (DAG) reports** at **Reports** > **Data access governance** surface sites that may hold overshared or sensitive content. The portal splits them into two groups. Snapshot reports:
+  - **Site permissions across your organization**, tagged RECOMMENDED
+  - **Site permissions for users**, tagged NEW
+  - **Sensitivity labels applied to files**
+
+  Activity reports, both covering the last 28 days:
+  - **Sharing links**
+  - **Shared with 'Everyone except external users'**
 - **Site access reviews** delegate the review of a DAG report to the owners of the overshared sites.
 - **Site policy comparison** takes one or more sites as a baseline and compares up to 10,000 target sites using AI.
 - **AI insights** sits next to the reports in the admin center and turns a report into a list of suggested actions.
