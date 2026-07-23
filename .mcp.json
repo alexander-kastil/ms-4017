@@ -1,0 +1,30 @@
+{
+	"mcpServers": {
+		"github": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/"
+		},
+		"microsoft-learn": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp"
+		},
+		"chrome-devtools": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"chrome-devtools-mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"work-iq": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@microsoft/workiq",
+				"mcp"
+			]
+		}
+	},
+	"inputs": []
+}
