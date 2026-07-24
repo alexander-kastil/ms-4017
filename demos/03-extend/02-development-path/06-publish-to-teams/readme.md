@@ -7,3 +7,7 @@
 [Publish an agent with the Microsoft Agent 365 CLI](https://learn.microsoft.com/en-us/microsoft-agent-365/developer/publish)
 
 [Distribute a custom agent to Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/publish)
+
+## Hands-On Demo
+
+[Publish a Foundry agent to Teams and Microsoft 365 Copilot](demo-publish-to-teams.md)

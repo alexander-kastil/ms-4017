@@ -5,3 +5,7 @@
 [Conditional Access for agent identities](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id)
 
 [Agent registry convergence in Microsoft Entra](https://learn.microsoft.com/en-us/entra/agent-id/agent-registry-convergence)
+
+## Hands-On Demo
+
+[Give an agent a governed identity](./demo-entra-agent-id.md): view an agent identity and its blueprint, confirm the human sponsor, and block high-risk agents with Conditional Access.

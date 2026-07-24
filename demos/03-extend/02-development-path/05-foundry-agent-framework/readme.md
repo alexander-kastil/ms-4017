@@ -5,3 +5,7 @@
 [Hosted agents in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents)
 
 [Microsoft Agent Framework overview](https://learn.microsoft.com/en-us/agent-framework/overview/)
+
+## Hands-On Demo
+
+[Build a prompt agent in Microsoft Foundry](demo-foundry-hosted-agent.md)

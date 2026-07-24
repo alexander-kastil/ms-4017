@@ -5,3 +5,7 @@
 [Agent actions an admin can take](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions)
 
 [Manage Microsoft 365 Copilot extensibility (Microsoft Learn)](https://learn.microsoft.com/en-us/training/modules/manage-microsoft-365-copilot-extensibility/)
+
+## Hands-On Demo
+
+[Tour the Agents workload in the admin center](./demo-agents-admin-tour.md)

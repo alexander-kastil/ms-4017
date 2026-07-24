@@ -7,3 +7,7 @@
 [Microsoft 365 Agents Toolkit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension)
 
 The starter app package for this topic is `HelloWorldAgent`, next to this readme.
+
+## Hands-On Demo
+
+- [Provision and run HelloWorldAgent](demo-hello-world-agent.md)

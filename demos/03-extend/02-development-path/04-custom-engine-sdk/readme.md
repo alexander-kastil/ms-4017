@@ -7,3 +7,7 @@
 [Use the Microsoft Agent Framework as the orchestrator in the Agents SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/using-semantic-kernel-agent-framework)
 
 The runnable project for this topic is `weather-agent`, next to this readme: a TypeScript custom engine agent on `@microsoft/agents-hosting` with LangChain and LangGraph, run with `npm run dev`.
+
+## Hands-On Demo
+
+[Run the weather agent and call its tools](demo-weather-agent.md)
