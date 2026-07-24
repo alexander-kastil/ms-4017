@@ -14,7 +14,7 @@
 
 [Office Customization Tool](https://config.office.com/deploymentsettings)
 
-- Go to the Microsoft 365 Admin Center
+- Go to the [Microsoft 365 Admin Center](https://admin.microsoft.com)
 - Navigate to: **Settings** > [**Org settings**](https://admin.cloud.microsoft/?#/Settings/Services)
 - Under the Services tab, select Microsoft 365 installation options
 - Choose `Current Channel` from the list of update channels.
@@ -23,7 +23,7 @@
 
 [Security defaults in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/security-defaults#enabling-security-defaults)
 
-- Sign in to the Microsoft Entra admin center as a Security Administrator.
+- Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a Security Administrator.
 - Go to Overview > Properties.
 - Click `Manage security defaults` at the bottom of the page.
 

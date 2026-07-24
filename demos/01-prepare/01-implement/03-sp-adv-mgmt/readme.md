@@ -2,6 +2,8 @@
 
 [SharePoint Advanced Management](https://learn.microsoft.com/en-us/sharepoint/advanced-management?WT.mc_id=365AdminCSH_spo)
 
+- Managed in the [**SharePoint admin center**](https://admin.microsoft.com/sharepoint) (or `https://<tenant>-admin.sharepoint.com`) under **Settings** and **Reports** once the SAM license is assigned.
+
 ## Key Features of SAM
 
 ### Block Download Policy for SharePoint and OneDrive
@@ -46,7 +48,7 @@ Now requires Microsoft 365 E5/A5/G5 licenses
 
 Restricts OneDrive access to members of specific security groups
 Prevents unauthorized access even if files were previously shared
-Configured through SharePoint Admin Center or PowerShell
+Configured through [SharePoint Admin Center](https://admin.microsoft.com/sharepoint) (or `https://<tenant>-admin.sharepoint.com`) or PowerShell
 
 ### Recent SharePoint Admin Actions
 
