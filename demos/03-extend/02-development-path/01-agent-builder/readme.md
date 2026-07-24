@@ -1,8 +1,12 @@
-# Declarative Agent
+# Build a Declarative Agent in Copilot Studio Agent Builder
 
-[Copilot Studio](https://copilotstudio.microsoft.com/)
+[Copilot Studio agent builder](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder)
 
-[Copilot Studio - Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-CopilotStudio.vscode-copilotstudio)
+[Agent builder vs full Copilot Studio](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copilot-studio-experience)
+
+[Copy an agent to Copilot Studio](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copy-agent-to-copilot-studio)
+
+The grounding document for this demo is `returns-policy.docx`, next to this readme.
 
 ## Demo
 
